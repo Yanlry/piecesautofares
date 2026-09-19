@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: "/images/logo.png",
+    icon: "/images/logo-navigateur.jpg",
   },
   other: {
     "geo.region": "FR-59",

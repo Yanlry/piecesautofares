@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Search } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
@@ -12,8 +13,17 @@ const infoNeeded = [
 
 export function SearchPartSection() {
   return (
-    <section className="bg-navy-900 py-16 text-white lg:py-20">
-      <Container className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center">
+    <section className="relative overflow-hidden bg-navy-900 py-16 text-white lg:py-20">
+      <Image
+        src="/images/banniere.png"
+        alt=""
+        fill
+        sizes="100vw"
+        className="object-cover"
+      />
+      <div className="absolute inset-0 bg-navy-950/25" aria-hidden />
+
+      <Container className="relative grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center">
         <div>
           <div className="flex items-center gap-3">
             <Search size={22} className="text-gold-300" aria-hidden />

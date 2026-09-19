@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 
 export function PageHeader({
@@ -10,8 +11,18 @@ export function PageHeader({
   description?: string;
 }) {
   return (
-    <section className="border-b border-navy-950/60 bg-navy-900 pb-14 pt-32 text-white lg:pb-16 lg:pt-40">
-      <Container>
+    <section className="relative overflow-hidden border-b border-navy-950/60 bg-navy-900 pb-14 pt-32 text-white lg:pb-16 lg:pt-40">
+      <Image
+        src="/images/banniere.png"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
+      />
+      <div className="absolute inset-0 bg-navy-950/25" aria-hidden />
+
+      <Container className="relative">
         {eyebrow && (
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-gold-300">
             {eyebrow}
