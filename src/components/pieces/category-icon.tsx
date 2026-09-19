@@ -9,6 +9,7 @@ import {
   Car,
   Wind,
   Wrench,
+  Droplets,
   type LucideProps,
 } from "lucide-react";
 import type { CategoryIcon } from "@/types/category";
@@ -38,5 +39,7 @@ export function CategoryIconGlyph({
       return <Wind {...props} />;
     case "wrench":
       return <Wrench {...props} />;
+    case "droplets":
+      return <Droplets {...props} />;
   }
 }

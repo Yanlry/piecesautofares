@@ -23,7 +23,7 @@ export function CategoryCard({
         {category.image ? (
           <Image
             src={category.image}
-            alt={category.name}
+            alt={category.imageAlt}
             fill
             sizes="(min-width: 1024px) 20vw, (min-width: 640px) 45vw, 90vw"
             className="object-cover"

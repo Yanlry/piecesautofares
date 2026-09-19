@@ -17,6 +17,19 @@ export function generateStaticParams() {
   return categories.map((category) => ({ categorie: category.slug }));
 }
 
+const categoryTitles: Record<string, string> = {
+  freinage: "Pièces de freinage",
+  moteur: "Pièces moteur",
+  filtration: "Filtres automobiles",
+  "huiles-liquides": "Huiles et liquides auto",
+  suspension: "Pièces de suspension",
+  direction: "Pièces de direction",
+  "batterie-accessoires": "Batteries et accessoires auto",
+  eclairage: "Éclairage automobile",
+  carrosserie: "Pièces de carrosserie",
+  echappement: "Pièces d'échappement",
+};
+
 export async function generateMetadata({
   params,
 }: {
@@ -30,8 +43,8 @@ export async function generateMetadata({
   }
 
   return {
-    title: category.name,
-    description: `${category.description} Pièce Auto Fares, à Faches-Thumesnil près de Lille, vous accompagne pour trouver la bonne référence.`,
+    title: categoryTitles[category.slug] ?? category.name,
+    description: `${category.description} Pièces Auto Fares, à Faches-Thumesnil près de Lille, vous accompagne pour trouver la bonne référence.`,
     alternates: {
       canonical: `/pieces/${category.slug}`,
     },
@@ -80,13 +93,35 @@ export default async function CategoriePage({
         description={category.description}
       />
 
+      <nav aria-label="Fil d'Ariane" className="border-b border-border bg-surface">
+        <Container className="py-3">
+          <ol className="flex flex-wrap items-center gap-1.5 text-xs text-ink-muted">
+            <li>
+              <Link href="/" className="hover:text-navy-900">
+                Accueil
+              </Link>
+            </li>
+            <li aria-hidden="true">/</li>
+            <li>
+              <Link href="/pieces" className="hover:text-navy-900">
+                Nos pièces
+              </Link>
+            </li>
+            <li aria-hidden="true">/</li>
+            <li className="text-navy-900" aria-current="page">
+              {category.name}
+            </li>
+          </ol>
+        </Container>
+      </nav>
+
       <section className="py-16 lg:py-20">
         <Container className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)]">
           {category.image && (
             <div className="relative aspect-[4/3] w-full border border-border lg:aspect-auto lg:h-full">
               <Image
                 src={category.image}
-                alt={category.name}
+                alt={category.imageAlt}
                 fill
                 sizes="(min-width: 1024px) 40vw, 90vw"
                 className="object-cover"
@@ -99,11 +134,7 @@ export default async function CategoriePage({
             Nous vous aidons à trouver la bonne référence
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-ink-muted">
-              Voici les pièces les plus couramment demandées dans cette
-              famille, adaptées à la plupart des véhicules. Sélectionnez
-              celle qui correspond à votre besoin pour nous transmettre votre
-              demande : nous confirmons ensuite la référence exacte pour
-              votre véhicule.
+              {category.intro}
             </p>
 
             {options.length > 0 && (

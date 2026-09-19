@@ -29,7 +29,7 @@ export function BrandsSection() {
 
         <div className="mx-auto mt-8 max-w-2xl text-center">
           <p className="text-sm leading-relaxed text-ink-muted">
-            Cette liste n&apos;est pas exhaustive. Pièce Auto Fares travaille
+            Cette liste n&apos;est pas exhaustive. Pièces Auto Fares travaille
             avec de nombreuses autres marques automobiles : contactez-nous
             pour vérifier la compatibilité avec votre véhicule.
           </p>

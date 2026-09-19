@@ -1,5 +1,5 @@
 export const company = {
-  name: "Pièce Auto Fares",
+  name: "Pièces Auto Fares",
   phone: "09 86 24 01 00",
   email: "",
   address: "107 Rue du Faubourg d'Arras, 59155 Faches-Thumesnil",

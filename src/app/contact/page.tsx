@@ -9,7 +9,7 @@ import { Container } from "@/components/ui/Container";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contactez Pièce Auto Fares à Faches-Thumesnil (Lille) pour toute demande de pièce automobile, en magasin ou par téléphone.",
+    "Contactez Pièces Auto Fares à Faches-Thumesnil (Lille) pour toute demande de pièce automobile, en magasin ou par téléphone.",
   alternates: {
     canonical: "/contact",
   },
@@ -29,7 +29,7 @@ export default function ContactPage() {
             <div className="relative aspect-[4/3] w-full border border-border">
               <Image
                 src="/images/magasin.jpg"
-                alt="Façade du magasin Pièce Auto Fares"
+                alt="Façade du magasin Pièces Auto Fares"
                 fill
                 sizes="(min-width: 1024px) 30vw, 90vw"
                 className="object-cover"

@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+
+export const metadata: Metadata = {
+  title: "Page introuvable",
+  description: "La page que vous recherchez n'existe pas ou plus sur le site Pièces Auto Fares.",
+};
 
 export default function NotFound() {
   return (

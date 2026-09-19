@@ -6,9 +6,11 @@ import { cn } from "@/lib/utils";
 export function Logo({
   size = 44,
   textClassName = "text-lg sm:text-xl",
+  priority = false,
 }: {
   size?: number;
   textClassName?: string;
+  priority?: boolean;
 }) {
   return (
     <Link href="/" className="flex items-center gap-3" aria-label={`${company.name} - Accueil`}>
@@ -19,7 +21,7 @@ export function Logo({
         height={size}
         style={{ width: size, height: size }}
         className="rounded-sm"
-        priority
+        priority={priority}
       />
       <span
         className={cn(

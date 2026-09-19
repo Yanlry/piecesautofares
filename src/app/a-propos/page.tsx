@@ -7,7 +7,7 @@ import { Container } from "@/components/ui/Container";
 export const metadata: Metadata = {
   title: "À propos",
   description:
-    "Découvrez Pièce Auto Fares, votre interlocuteur pour la recherche de pièces automobiles adaptées à votre véhicule, basé à Faches-Thumesnil près de Lille.",
+    "Découvrez Pièces Auto Fares, votre interlocuteur pour la recherche de pièces automobiles adaptées à votre véhicule, basé à Faches-Thumesnil près de Lille.",
   alternates: {
     canonical: "/a-propos",
   },
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function AProposPage() {
   return (
     <>
-      <PageHeader eyebrow="À propos" title="Pièce Auto Fares" />
+      <PageHeader eyebrow="À propos" title="Pièces Auto Fares" />
 
       <section className="py-16 lg:py-20">
         <Container className="max-w-3xl">
@@ -33,7 +33,7 @@ export default function AProposPage() {
 
           <div className="mt-10 space-y-6 text-base leading-relaxed text-ink-muted">
             <p>
-              Pièce Auto Fares est une entreprise spécialisée dans la vente de
+              Pièces Auto Fares est une entreprise spécialisée dans la vente de
               pièces automobiles. Notre rôle est d&apos;accompagner nos clients
               dans l&apos;identification et l&apos;obtention des pièces
               adaptées à leur véhicule, quelle que soit la marque ou le
@@ -52,7 +52,7 @@ export default function AProposPage() {
               réponse adaptée aux besoins réels du véhicule concerné.
             </p>
             <p>
-              Pièce Auto Fares est basé à Faches-Thumesnil, à proximité
+              Pièces Auto Fares est basé à Faches-Thumesnil, à proximité
               immédiate de Lille. Nous accueillons nos clients en magasin et
               accompagnons également des demandes dans les Hauts-de-France et
               partout en France.

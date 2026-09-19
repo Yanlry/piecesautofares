@@ -41,7 +41,7 @@ export function Header() {
       )}
     >
       <Container className="flex h-20 items-center justify-between">
-        <Logo />
+        <Logo priority />
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Navigation principale">
           {navLinks.map((link) => {

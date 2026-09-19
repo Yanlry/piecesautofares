@@ -20,11 +20,11 @@ const oswald = Oswald({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Pièce Auto Fares | Pièces automobiles",
-    template: "%s | Pièce Auto Fares",
+    default: "Pièces Auto Fares | Pièces automobiles",
+    template: "%s | Pièces Auto Fares",
   },
   description:
-    "Pièce Auto Fares vous accompagne dans la recherche de pièces automobiles adaptées à votre véhicule. Basé à Faches-Thumesnil, près de Lille, nous servons les Hauts-de-France et toute la France.",
+    "Pièces Auto Fares vous accompagne dans la recherche de pièces automobiles adaptées à votre véhicule. Basé à Faches-Thumesnil, près de Lille, nous servons les Hauts-de-France et toute la France.",
   alternates: {
     canonical: "/",
   },

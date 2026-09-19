@@ -25,7 +25,7 @@ export function SearchPartSection() {
             Vous recherchez une pièce précise ?
           </h2>
           <p className="mt-4 max-w-xl text-white/70">
-            Contactez Pièce Auto Fares en nous communiquant les informations
+            Contactez Pièces Auto Fares en nous communiquant les informations
             de votre véhicule. Plus les informations sont précises, plus la
             recherche de la référence adaptée sera rapide.
           </p>

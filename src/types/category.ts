@@ -8,7 +8,8 @@ export type CategoryIcon =
   | "lightbulb"
   | "car"
   | "wind"
-  | "wrench";
+  | "wrench"
+  | "droplets";
 
 export type Category = {
   id: string;
@@ -16,6 +17,8 @@ export type Category = {
   name: string;
   shortDescription: string;
   description: string;
+  intro: string;
   icon: CategoryIcon;
   image?: string;
+  imageAlt: string;
 };

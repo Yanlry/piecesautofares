@@ -8,7 +8,7 @@ import { Container } from "@/components/ui/Container";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Les services proposés par Pièce Auto Fares : recherche de références, accompagnement, vente de pièces et conseils avant achat.",
+    "Les services proposés par Pièces Auto Fares : recherche de références, accompagnement, vente de pièces et conseils avant achat.",
   alternates: {
     canonical: "/services",
   },
@@ -58,7 +58,7 @@ export default function ServicesPage() {
       <PageHeader
         eyebrow="Services"
         title="Nos services"
-        description="Pièce Auto Fares vous accompagne à chaque étape de votre recherche de pièces automobiles."
+        description="Pièces Auto Fares vous accompagne à chaque étape de votre recherche de pièces automobiles."
       />
       <section className="py-16 lg:py-20">
         <Container>

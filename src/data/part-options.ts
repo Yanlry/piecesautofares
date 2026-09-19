@@ -21,6 +21,14 @@ export const partOptionsByCategory: Record<string, string[]> = {
     "Filtre à carburant",
     "Filtre d'habitacle",
   ],
+  "huiles-liquides": [
+    "Huile moteur",
+    "Liquide de frein",
+    "Liquide de refroidissement",
+    "Liquide de direction assistée",
+    "Liquide d'embrayage",
+    "Additif ou nettoyant moteur",
+  ],
   suspension: [
     "Amortisseur avant",
     "Amortisseur arrière",
@@ -34,11 +42,16 @@ export const partOptionsByCategory: Record<string, string[]> = {
     "Crémaillère de direction",
     "Soufflet de direction",
   ],
-  "batterie-demarrage": [
+  "batterie-accessoires": [
     "Batterie",
     "Démarreur",
     "Alternateur",
     "Câble de batterie",
+    "Essuie-glace avant",
+    "Essuie-glace arrière",
+    "Tapis de sol",
+    "Ampoule d'appoint",
+    "Fusible",
   ],
   eclairage: [
     "Phare avant",
@@ -59,13 +72,6 @@ export const partOptionsByCategory: Record<string, string[]> = {
     "Catalyseur",
     "Ligne d'échappement",
     "Collecteur d'échappement",
-  ],
-  accessoires: [
-    "Essuie-glace avant",
-    "Essuie-glace arrière",
-    "Tapis de sol",
-    "Ampoule d'appoint",
-    "Fusible",
   ],
 };
 
