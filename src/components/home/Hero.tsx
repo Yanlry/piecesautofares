@@ -19,10 +19,10 @@ export function Hero() {
       <Container className="relative">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-300">
-           Bienvenue
+          {company.name}
           </p>
           <h1 className="mt-5 font-heading text-3xl font-semibold leading-tight sm:text-4xl">
-            Pièces automobiles à Lille – {company.name}
+            Pièces automobiles à Lille
           </h1>
           <p className="mx-auto mt-4 max-w-lg text-base leading-relaxed text-white/80">
             Vous y trouverez tout ce dont vous avez besoin : freinage,
