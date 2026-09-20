@@ -35,7 +35,7 @@ export default function ContactPage() {
                 className="object-cover"
               />
             </div>
-            <ContactInfoCard />
+            <ContactInfoCard showDirections />
           </div>
           <Suspense fallback={<div className="border border-border bg-surface p-8" />}>
             <ContactForm />

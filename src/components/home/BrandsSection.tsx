@@ -1,4 +1,4 @@
-import { Car } from "lucide-react";
+import Image from "next/image";
 import { brands } from "@/data/brands";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -17,10 +17,16 @@ export function BrandsSection() {
           {brands.map((brand) => (
             <li
               key={brand.id}
-              className="flex flex-col items-center justify-center gap-2 bg-surface px-4 py-6"
+              className="flex min-h-32 flex-col items-center justify-center gap-4 bg-surface px-4 py-6"
             >
-              <span className="flex h-10 w-10 items-center justify-center bg-navy-900 text-gold-300">
-                <Car size={18} aria-hidden />
+              <span className="flex h-14 w-24 items-center justify-center">
+                <Image
+                  src={brand.logo}
+                  alt={`Logo ${brand.name}`}
+                  width={72}
+                  height={72}
+                  className="max-h-14 w-auto object-contain"
+                />
               </span>
               <span className="text-sm font-medium text-navy-900">{brand.name}</span>
             </li>

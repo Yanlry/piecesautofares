@@ -16,7 +16,7 @@ export function ContactSection() {
           className="mx-auto"
         />
         <div className="mx-auto mt-10 grid max-w-4xl grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)]">
-          <ContactInfoCard />
+          <ContactInfoCard showStorePhoto />
           <Suspense fallback={<div className="border border-border bg-surface p-8" />}>
             <ContactForm />
           </Suspense>
